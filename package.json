@@ -1,7 +1,7 @@
 {
-  "name": "api",
+  "name": "reviews api",
   "version": "1.0.0",
-  "description": "## Hack Reactor SDC Project ### Backend Development Project",
+  "description": "Full implentation of backend API for Hack Reactor SDC Project.",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/app.js"
