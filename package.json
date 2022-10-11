@@ -1,5 +1,5 @@
 {
-  "name": "reviews api",
+  "name": "sdc-api",
   "version": "1.0.0",
   "description": "Full implentation of backend API for Hack Reactor SDC Project.",
   "main": "index.js",

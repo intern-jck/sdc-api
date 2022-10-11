@@ -21,12 +21,12 @@ mongoose.connect(mongoURL,
   });
 
 //Routes
-// const productsRouter = require('./routes/products.js');
+const productsRouter = require('./routes/products.js');
 // const questionsRouter = require('./routes/questions.js');
 // const relatedRouter = require('./routes/related.js');
-const reviewsRouter = require('./routes/reviews.js');
+// const reviewsRouter = require('./routes/reviews.js');
 
-// app.use('/products', productsRouter);
+app.use('/products', productsRouter);
 // app.use('/questions', questionsRouter);
 // app.use('/related', relatedRouter);
 // app.use('/reviews', reviewsRouter);
