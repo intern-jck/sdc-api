@@ -4,6 +4,7 @@ const Product = require('../models/productModel.js');
 const getProducts = (req, res) => {
   console.log('Get All Products', req.query)
   Product.find()
+  .sort({'product_id': 1})
   .limit(10)
   .select({
     'product_id': 1,
@@ -15,9 +16,6 @@ const getProducts = (req, res) => {
   })
   .exec()
   .then((doc) => {
-    // doc[0].product_id = req.params.product_id;
-    // doc[0].page = 1;
-    // doc[0].count = req.query.count;
     res.send(doc);
   })
   .catch((error) => {

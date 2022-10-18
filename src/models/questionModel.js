@@ -1,5 +1,4 @@
-const mongoose = require('mongoose');
-const {Schema} = mongoose;
+const {Schema, model} = require('mongoose');
 
 const QuestionModel = new Schema({
   product_id: String,
@@ -15,5 +14,5 @@ const QuestionModel = new Schema({
     }]
 });
 
-const Question = mongoose.model('Questions', QuestionModel);
+const Question = model('Questions', QuestionModel);
 module.exports = Question;
